@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="google-site-verification" content="zENHrsu9LYDxZD8mUAnCgWWtKfaBwxzxOVpRL-e6D2c" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Khun Myat's Portfolio</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'VT323', monospace;
       margin: 0;
       padding: 0;
       background-color: #222;
@@ -18,128 +17,126 @@
       max-width: 800px;
       margin: 0 auto;
       padding: 20px;
+      text-align: center;
+    }
+    header img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
     h1 {
-      text-align: center;
       font-size: 3em;
       font-weight: 700;
       color: #ff7f50; /* coral color */
+      margin-top: 20px;
     }
     p {
-      text-align: center;
       font-size: 1.2em;
+      line-height: 1.6;
     }
-    .about {
+    .about, .portfolio, .contact {
       margin-top: 40px;
     }
-    .portfolio {
-      margin-top: 40px;
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
-    .contact {
-      margin-top: 40px;
+    .card {
+      width: 150px;
+      padding: 10px;
+      margin: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      font-size: 1.2em;
+      margin: 0;
+      color: #333;
+    }
+    .contact a {
+      color: #ff7f50;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .contact a:hover {
+      color: #fff;
     }
     footer {
       margin-top: 40px;
       text-align: center;
       font-size: 0.9em;
     }
-    @media screen and (max-width: 768px) {
-      h1 {
-        font-size: 2.5em;
-      }
-      p {
-        font-size: 1em;
-      }
-    }
-    .card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.card {
-  width: 150px;
-  padding: 10px;
-  margin: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.card h3 {
-  font-size: 1.2em;
-  margin: 0;
-  color: #333;
-}
-
   </style>
 </head>
 <body>
-  <center>
-    <div class="container">
+  <div class="container">
     <header>
-      <img src="https://i.pinimg.com/originals/08/fb/61/08fb615b1a389de5bc0410136d75f50d.gif"></img>
+      <img src="https://i.pinimg.com/originals/08/fb/61/08fb615b1a389de5bc0410136d75f50d.gif" alt="Header Image">
     </header>
+    <h1>Khun Myat's Portfolio</h1>
     <section class="about">
-      <p>Hi, I'm <b>Khun Myat. (kmxx on <a href="https://hackerone.com/kmxx">HackerOne</a>)</b></br> 
-      A passionate web security researcher and bug bounty hunter with a focus on recon, exploitation, and API testing. I'm dedicated to strengthening cybersecurity by uncovering vulnerabilities and securing digital platforms. Let's collaborate to make the web safer.</section>
-      <section class="pwned">
-  <h2>Pwned:</h2>
-  <div class="card-container">
-    <div class="card">
-      <h3>AT&T</h3>
-    </div>
-    <div class="card">
-      <h3>Meta(Facebook)</h3>
-    </div>
-    <div class="card">
-      <h3>Alibaba</h3>
-    </div>
-    <div class="card">
-      <h3>Basecamp</h3>
-    </div>
-    <div class="card">
-      <h3>Uber</h3>
-    </div>
-    <div class="card">
-      <h3>Grab</h3>
-    </div>
-    <div class="card">
-      <h3>U.S. Dept Of Defense</h3>
-    </div>
-    <div class="card">
-      <h3>GovTech Singapore</h3>
-    </div>
-    <div class="card">
-      <h3>Ford</h3>
-    </div>
-    <div class="card">
-      <h3>IBM</h3>
-    </div>
-    <div class="card">
-      <h3>PUBG</h3>
-    </div>
-    <div class="card">
-      <h3>General Motors</h3>
-    </div>
-    <div class="card">
-      <h3>Sony</h3>
-    </div>
-    <div class="card">
-      <h3>and many more...</h3>
-    </div>
-  </div>
-</section>
+      <p>Hi, I'm <b>Khun Myat. (kmxx on <a href="https://hackerone.com/kmxx" target="_blank" rel="noopener noreferrer">HackerOne</a>)</b>. A passionate web security researcher and bug bounty hunter with a focus on recon, exploitation, and API testing. I'm dedicated to strengthening cybersecurity by uncovering vulnerabilities and securing digital platforms. Let's collaborate to make the web safer.</p>
+    </section>
+    <section class="portfolio">
+      <h2>Pwned:</h2>
+      <div class="card-container">
+        <div class="card">
+          <h3>AT&T</h3>
+        </div>
+        <div class="card">
+          <h3>Meta(Facebook)</h3>
+        </div>
+        <div class="card">
+          <h3>Alibaba</h3>
+        </div>
+        <div class="card">
+          <h3>Basecamp</h3>
+        </div>
+        <div class="card">
+          <h3>Uber</h3>
+        </div>
+        <div class="card">
+          <h3>Grab</h3>
+        </div>
+        <div class="card">
+          <h3>U.S. Dept Of Defense</h3>
+        </div>
+        <div class="card">
+          <h3>GovTech Singapore</h3>
+        </div>
+        <div class="card">
+          <h3>Ford</h3>
+        </div>
+        <div class="card">
+          <h3>IBM</h3>
+        </div>
+        <div class="card">
+          <h3>PUBG</h3>
+        </div>
+        <div class="card">
+          <h3>General Motors</h3>
+        </div>
+        <div class="card">
+          <h3>and many more...</h3>
+        </div>
+      </div>
+    </section>
     <section class="contact">
       <h2>Let's Connect!</h2>
-      <p>Drop me a message at <a href="mailto:kmxx@wearehackerone.com">kmxx@wearehackerone.com</a>. </br>Whether it's about collaborating on projects or just grabbing a virtual coffee and making new friends in the cybersecurity community, I'm all in!</p>
+      <p>Drop me a message at <a href="mailto:kmxx@wearehackerone.com">kmxx@wearehackerone.com</a>. Whether it's about collaborating on projects or just grabbing a virtual coffee and making new friends in the cybersecurity community, I'm all in!</p>
     </section>
   </div>
   <footer>
     &copy; 2024 Khun Myat. All rights reserved.
   </footer>
-  </center>
 </body>
 </html>
